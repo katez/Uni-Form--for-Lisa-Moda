@@ -1,0 +1,103 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.interview-banner {
+  width: 100%;
+  height: 95px;
+  background-color: #19283B;
+  position: fixed;
+  z-index: 1;
+}
+
+.interview-background {
+  background-color: #F4F8FB;
+  min-height: 100vh;
+  height: 100%;
+}
+.interview-box-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+}
+
+.interview-box {
+  position: relative;
+  border: 2px solid #000000;
+  max-width: 625px;
+  width: 100%;
+  min-height: 446px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 35px;
+  background: white;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  border-radius: 4px;
+}
+
+.interview-box > button {
+  position: absolute;
+  bottom: 35px;
+  width: 108px;
+  height: 41px;
+  font-family: OpenSans-Light;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #19283B;
+  border: 1px solid #19283B;
+  border-radius: 4px;
+}
+
+.interview-box > p {
+  position: absolute;
+  top: 35px;
+  color: #5B5A5A;
+}
+.countDownContainer {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: #5B5A5A;
+}
+.button-1 {
+  position: absolute;
+  right: 35px;
+  bottom: 55px;
+  background-color: #536C8B;
+  border: 1px solid #536C8B;
+}
+.interview-header {
+  margin-left: 300px;
+  top: 150px;
+}
+.commonButton {
+  border-radius: 50%;
+  background-color: #e84c3d;
+  width: 75px;
+  height: 75px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.pulse-button {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: #e84c3d;
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/jonathanlarradet_copy.png);*/
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
