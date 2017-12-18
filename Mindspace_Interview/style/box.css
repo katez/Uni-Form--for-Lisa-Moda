@@ -101,6 +101,17 @@ body {
   box-shadow: -5px 0px 5px 0px #F0F0F0;
 }
 
+.card
+  {
+    display: flex;
+    max-width: 195px;
+    max-height: 90px;
+      .it-card {
+        float: right;
+        flex-direction: row;
+}
+}
+
 .content-section {
   display: flex;
   flex-direction: row;

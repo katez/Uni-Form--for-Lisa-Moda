@@ -44,6 +44,23 @@
   color: #5B5A5A;
   text-align: left;
 }
+.it-card-item {
+  font-size: 13px;
+  font-family: OpenSans, sans-serif;
+  color: #50596A;
+}
+
+.interest-item {
+min-width: 44px;
+height: 28px;
+padding-left: 4px;
+padding-right: 4px;
+font-family: OpenSans-Regular;
+font-size: 13px;
+text-align: center;
+line-height: 18px;
+color: #333333;
+background-color: #EEEEEE;}
 
 .timer {
   text-align: right;
@@ -124,6 +141,12 @@ font-family: OpenSans-Bold, sans-serif;
 font-size: 13px;
 color: #50596A;
 }
+
+.details-card {
+  display: flex;
+  flex-direction: row;
+}
+
 .title-available {
   margin: 10px;
 }
