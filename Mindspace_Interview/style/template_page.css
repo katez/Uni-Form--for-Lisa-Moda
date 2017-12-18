@@ -58,22 +58,14 @@
   color: #5B5A5A;
 }
 
-.exit-text {
-  width: 470px;
-  height: 175px;
-  font-family: OpenSans-Regular;
-  font-size: 16px;
-  text-align: center;
-  color: #333333;
-}
-
 .join {
   font-family: OpenSans-Semibold;
   font-size: 21px;
   text-align: center;
   color: #5B5A5A;
 }
-.privacy-text{
+
+.privacy-text {
   width: 485px;
   height: 195px;
   font-family: OpenSans-Regular;
@@ -118,6 +110,10 @@
   box-shadow: -5px 0px 5px 0px #F0F0F0;
 }
 
+input:focus {
+  outline: none;
+}
+
 .invite-header {
   font-family: OpenSans-Bold;
   font-size: 16px;
@@ -129,14 +125,17 @@
   font-size: 13px;
   color: #50596A;
 }
+
 .invite-social {
   font-family: OpenSans-Regular;
   font-size: 13px;
-  color: #50596A;}
+  color: #50596A;
+}
 
 .invite-social {
-  margin-top:55px;
+  margin-top: 55px;
 }
+
 .invite-email-line.invite-social-line {
   max-width: 73%;
   height: 0px;
@@ -157,26 +156,45 @@
   margin-left: 30px;
   flex-direction: row;
 }
-#stat-edit {
+
+.edit {
   text-align: right;
   float: right;
   margin-right: 10px;
   color: #6D78D8;
 }
+
 .bio-header {
   color: #50596A;
 }
+
 .bio-summary {
   color: #C4C4C4;
+  width: 458px;
+  height: 56px;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #C4C4C4;
 }
+
+.bio-summary :focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+}
+
 body {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
 }
+
 .left-aside {
-  width:10%;
+  width: 10%;
   background: #19283B;
 }
 
@@ -205,20 +223,25 @@ body {
   height: 500px;
 }
 
+.current-stats {
+  height: 80px;
+}
+
 .content-section {
   display: flex;
   flex-direction: row;
   padding: 20px;
-  height:700px;
+  height: 700px;
 }
 
 .right-section {
   width: 70%;
-  height: 100vh;}
+  height: 100vh;
+}
 
 .aside {
-  width:15%;
-  height:8%;
+  width: 15%;
+  height: 8%;
   margin: 20px;
 }
 
@@ -242,16 +265,19 @@ body {
   background-color: #19283B;
   border: none;
 }
+
 .profile-header {
   font-family: OpenSans-Bold;
   font-size: 16px;
   color: #50596A;
 }
+
 .contatiner-invite {
   display: flex;
   flex-direction: column;
   float: left;
 }
+
 .profile-button img {
-    float: left;
+  float: left;
 }

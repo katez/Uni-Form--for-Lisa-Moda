@@ -66,6 +66,10 @@
   text-align: center;
   color: #333333;
 }
+.user-ja
+.user-nein{
+  border: none;
+}
 
 .join {
   font-family: OpenSans-Semibold;
@@ -108,7 +112,18 @@
 .user-area-background {
   max-width: 904px;
   max-height: 729px;
-  background-color: #F4F8FB;
+  background-color: #F4F8FB;}
+
+.card-title {
+font-family: OpenSans, sans-serif;
+font-size: 13px;
+font-weight: 700;
+color: #50596A;
+}
+.detail-title {
+font-family: OpenSans-Bold, sans-serif;
+font-size: 13px;
+color: #50596A;
 }
 
 .user-area-box {

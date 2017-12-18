@@ -122,3 +122,12 @@ body {
 .university-statistics-title {
   color: #50596A;
 }
+
+.university-statistics-box {
+  width: 664px;
+  max-height: 60px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #FFFFFF;
+  box-shadow: -5px 0px 5px 0px #EEEEEE;
+}

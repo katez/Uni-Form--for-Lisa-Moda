@@ -14,6 +14,17 @@
 </head>
 
 <body>
+  <script>
+
+  function doSaveAs(){
+  if (document.execCommand){
+  document.execCommand("SaveAs")
+  }
+  else {
+  alert("Please check your browser.")
+  }
+  }
+  </script>
   <div class="left-aside">
     <div class="logo"><img class="intro-circle-logo" src="/images/Intro_Circle_Logo.svg" alt="Intro Circle"></img>
     </div>
@@ -27,7 +38,7 @@
     <section class="content-section">
       <p class="profile-header">Profile</p>
       <div class="right-section">
-        <section class="main-section">
+        <section class="main-section current-stats">
           <span class="university-statistics-title">NOTE</span>
           <span class="university-statistics-title">SEM</span>
           <span class="university-statistics-title">PRAXIS</span>
@@ -46,26 +57,18 @@
           <div>
             <p class="bio-header">Bio</p>
             <a href="#" class="text edit" id="bio-edit">edit</a>
-            <script>
-
-            function doSaveAs(){
-            if (document.execCommand){
-            document.execCommand("SaveAs")
-            }
-            else {
-            alert("Please check your browser.")
-            }
-            }
-            </script>
-            <form>
-              <input type="button" value="Save" onClick="doSaveAs()"
-            </form>
             <!--Plz check if data-placeholder is working-->
-            <p contenteditable="true" bio="bio-summary" data-placeholder="In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales."></p>
+            <input type="text" class="bio-summary" placeholder="In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales."></input>
           </div>
+          <div class="interests-card">
+            <h class="card-title">UNI Schwerpunkt</h>
+            <h class="card-title">Praxis</h>
+            </div>
+
 
           <section>
-            <div class="profile-preferences">
+            <div class="skills-card">
+              <h class="card-title">Languages</h>
               <a href="#" class="text edit">edit</a>
               <div class="dropdown">
                 <select id="myDropdown" class="dropdown-content">
@@ -74,6 +77,8 @@
                   <option class="dropdown-content">+++</option>
                 </select>
               </div>
+              <h class="card-title">IT Skills</h>
+              <a href="#" class="text edit">edit</a>
               <div class="dropdown">
                 <select id="myDropdown" class="dropdown-content">
                   <option>+</option>
@@ -84,12 +89,26 @@
           </div>
           </div>
           </section>
+          <div class="details-card">
+          <h class="detail-title">Ausland</h>
+          <h class="detail-title">Ehrenamt</h>
+          </div>
+          <div class="user-save">
+            <form>
+              <input class="edit user-save-button" type="button" value="SPEICHERN" onClick="doSaveAs()">
+            </form>
+          </div>
         </section>
 
-        <section class="main-section text edit">edit</section>
+        <section class="main-section university-statistics-box">
         <div>
-          <a href="#" class="text university-statistics-box">edit</a>
+          <h class="title-available">PROFIL FÜR UNTERNEHMEN ANONYM SICHTBAR</h>
+          <form>
+            <input class="edit user-ja" type="button" value="JA/" onClick="doSaveAs()">
+            <input class="edit user-nein" type="button" value="NEIN" onClick="doSaveAs()">
+          </form>
         </div>
+        </section>
       </div>
       <!-- Small side Box -->
       <div class="aside">
