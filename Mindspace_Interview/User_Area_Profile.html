@@ -17,9 +17,9 @@
   <div class="left-aside">
     <div class="logo"><img class="intro-circle-logo" src="/images/Intro_Circle_Logo.svg" alt="Intro Circle"></img>
     </div>
-    <button class="profile-button"><img class="profile-icon" src="./images/Profile.png" alt="Profile Icon"></img>Profile</button>
-    <button class="profile-button"><img class="invite-icon" src="./images/Invite.png" alt="Invite Icon"></img>Invite</button>
-    <button class="profile-button"><img class="logout-logo" src="./images/Logout.png" alt="Logout Icon"></img>Logout</button>
+    <button class="profile-button"><img class="profile-icon" id="profile-avatar" src="./images/Profile.png" alt="Profile Icon"></img>Profile</button>
+    <button class="profile-button"><img id="invite-icon" class="profile-icon" src="./images/Invite.png" alt="Invite Icon"></img>Invite</button>
+    <button class="profile-button"><img id="logout-logo" class="profile-icon" src="./images/Logout.png" alt="Logout Icon"></img>Logout</button>
   </div>
   <!--Main Box-->
   <div class="main">
@@ -46,6 +46,20 @@
           <div>
             <p class="bio-header">Bio</p>
             <a href="#" class="text edit" id="bio-edit">edit</a>
+            <script>
+
+            function doSaveAs(){
+            if (document.execCommand){
+            document.execCommand("SaveAs")
+            }
+            else {
+            alert("Please check your browser.")
+            }
+            }
+            </script>
+            <form>
+              <input type="button" value="Save" onClick="doSaveAs()"
+            </form>
             <!--Plz check if data-placeholder is working-->
             <p contenteditable="true" bio="bio-summary" data-placeholder="In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales."></p>
           </div>
@@ -79,8 +93,9 @@
       </div>
       <!-- Small side Box -->
       <div class="aside">
-        <div class="aside-element">Upload Documents</div>
-        <input type="file">
+        <div class="aside-element">Upload Documents
+          <button> <img class="document-icon" src="./images/Documents.png" alt="Document Icon"></img></button>
+        </div>
       </div>
     </section>
   </div>
