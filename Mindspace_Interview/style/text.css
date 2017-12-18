@@ -66,9 +66,8 @@
   text-align: center;
   color: #333333;
 }
-.user-ja
-.user-nein{
-  border: none;
+.left-edit {
+  margin-left: 30px;
 }
 
 .join {
@@ -125,12 +124,8 @@ font-family: OpenSans-Bold, sans-serif;
 font-size: 13px;
 color: #50596A;
 }
-
-.user-area-box {
-  max-width: 666px;
-  max-height: 543px;
-  background-color: #FFFFFF;
-  box-shadow: -5px 0px 5px 0px #F0F0F0;
+.title-available {
+  margin: 10px;
 }
 
 .invite-header {
@@ -164,6 +159,7 @@ color: #50596A;
   margin-right: 60px;
   margin-left: 30px;
   flex-direction: row;
+  font-family: OpenSans-Italic, sans-serif;
 }
 #stat-edit {
   text-align: right;

@@ -94,6 +94,13 @@ body {
   height: 100px;
 }
 
+.user-area-box {
+  max-width: 666px;
+  max-height: 543px;
+  background-color: #FFFFFF;
+  box-shadow: -5px 0px 5px 0px #F0F0F0;
+}
+
 .content-section {
   display: flex;
   flex-direction: row;

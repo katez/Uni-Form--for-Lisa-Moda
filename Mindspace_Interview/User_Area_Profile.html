@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -9,21 +8,19 @@
   <link rel="stylesheet" href="style/button.css">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/template_page.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
 
 <body>
   <script>
-
-  function doSaveAs(){
-  if (document.execCommand){
-  document.execCommand("SaveAs")
-  }
-  else {
-  alert("Please check your browser.")
-  }
-  }
+    function doSaveAs() {
+      if (document.execCommand) {
+        document.execCommand("SaveAs")
+      } else {
+        alert("Please check your browser.")
+      }
+    }
   </script>
   <div class="left-aside">
     <div class="logo"><img class="intro-circle-logo" src="/images/Intro_Circle_Logo.svg" alt="Intro Circle"></img>
@@ -44,14 +41,14 @@
           <span class="university-statistics-title">PRAXIS</span>
           <span class="university-statistics-title">FACH</span>
           <span class="university-statistics-title">UNI</span>
-<a href="#" class="text edit" id="stat-edit">edit</a>
-        <div>
-          <span contenteditable="true" class="university-statistics-result">1,6</span>
-          <span contenteditable="true" class="university-statistics-result">5. B.A.</span>
-          <span contenteditable="true" class="university-statistics-result">JA</span>
-          <span contenteditable="true" class="university-statistics-result">BWL</span>
-          <span contenteditable="true" class="university-statistics-result">HU</span>
-        </div>
+          <a href="#" class="text edit" id="stat-edit">edit</a>
+          <div>
+            <span contenteditable="true" class="university-statistics-result">1,6</span>
+            <span contenteditable="true" class="university-statistics-result">5. B.A.</span>
+            <span contenteditable="true" class="university-statistics-result">JA</span>
+            <span contenteditable="true" class="university-statistics-result">BWL</span>
+            <span contenteditable="true" class="university-statistics-result">HU</span>
+          </div>
         </section>
         <section class="main-section bio-preferences">
           <div>
@@ -62,62 +59,112 @@
           </div>
           <div class="interests-card">
             <h class="card-title">UNI Schwerpunkt</h>
-            <h class="card-title">Praxis</h>
+            <a href="#" class="text edit left-edit">edit</a>
+            <div class="dropdown">
+              <select id="myDropdown" class="dropdown-content">
+                <option class="dropdown-content">+</option>
+                <option class="dropdown-content">++</option>
+                <option class="dropdown-content">+++</option>
+              </select>
+              <h class="card-title">Praxis</h>
+              <select id="myDropdown" class="dropdown-content">
+                <option class="dropdown-content">+</option>
+                <option class="dropdown-content">++</option>
+                <option class="dropdown-content">+++</option>
+              </select>
             </div>
+
+          </div>
 
 
           <section>
             <div class="skills-card">
               <h class="card-title">Languages</h>
-              <a href="#" class="text edit">edit</a>
+              <a href="#" class="text edit left-edit">edit</a>
+              <p>Language</p>
               <div class="dropdown">
                 <select id="myDropdown" class="dropdown-content">
                   <option class="dropdown-content">+</option>
                   <option class="dropdown-content">++</option>
                   <option class="dropdown-content">+++</option>
                 </select>
-              </div>
-              <h class="card-title">IT Skills</h>
-              <a href="#" class="text edit">edit</a>
-              <div class="dropdown">
+                <p>Language</p>
                 <select id="myDropdown" class="dropdown-content">
-                  <option>+</option>
-                  <option>++</option>
-                  <option>+++</option>
+                  <option class="dropdown-content">+</option>
+                  <option class="dropdown-content">++</option>
+                  <option class="dropdown-content">+++</option>
+                </select>
+                <p>Language</p>
+                <div class="dropdown">
+                  <select id="myDropdown" class="dropdown-content">
+                    <option class="dropdown-content">+</option>
+                    <option class="dropdown-content">++</option>
+                    <option class="dropdown-content">+++</option>
+                  </select>
+                </div>
+                <h class="card-title">IT Skills</h>
+                <a href="#" class="text edit left-edit">edit</a>
+                <div class="dropdown">
+                  <p>EXCEL</p>
+                  <select id="myDropdown" class="dropdown-content">
+                    <option>+</option>
+                    <option>++</option>
+                    <option>+++</option>
+                    </select>
+                  <p>POWERPOINT</p>
+                  <select id="myDropdown" class="dropdown-content">
+                    <option>+</option>
+                    <option>++</option>
+                    <option>+++</option>
+                    </select>
+                  <p>WORD</p>
+                  <select id="myDropdown" class="dropdown-content">
+                    <option>+</option>
+                    <option>++</option>
+                    <option>+++</option>
+                    </select>
 
-          </select>
-          </div>
-          </div>
+                  <a href="#" class="text edit">edit</a>
+                  <select id="myDropdown" class="dropdown-content">
+                    <option class="dropdown-content">+</option>
+                    <option class="dropdown-content">++</option>
+                    <option class="dropdown-content">+++</option>
+                  </select>
+
+
+                  </select>
+                </div>
+              </div>
           </section>
           <div class="details-card">
-          <h class="detail-title">Ausland</h>
-          <h class="detail-title">Ehrenamt</h>
+            <h class="detail-title">Ausland</h>
+            <h class="detail-title">Ehrenamt</h>
           </div>
           <div class="user-save">
             <form>
-              <input class="edit user-save-button" type="button" value="SPEICHERN" onClick="doSaveAs()">
+              <input class="edit user-save-button save" type="button" value="SPEICHERN" onClick="doSaveAs()">
             </form>
           </div>
         </section>
 
         <section class="main-section university-statistics-box">
-        <div>
-          <h class="title-available">PROFIL FÜR UNTERNEHMEN ANONYM SICHTBAR</h>
-          <form>
-            <input class="edit user-ja" type="button" value="JA/" onClick="doSaveAs()">
-            <input class="edit user-nein" type="button" value="NEIN" onClick="doSaveAs()">
-          </form>
-        </div>
+          <div>
+            <h class="title-available">PROFIL FÜR UNTERNEHMEN ANONYM SICHTBAR</h>
+            <form>
+              <input class="edit user-ja user-save-button" type="button" value="JA/" onClick="doSaveAs()">
+              <input class="edit user-nein user-save-button" type="button" value="NEIN" onClick="doSaveAs()">
+            </form>
+          </div>
         </section>
-      </div>
-      <!-- Small side Box -->
-      <div class="aside">
-        <div class="aside-element">Upload Documents
-          <button> <img class="document-icon" src="./images/Documents.png" alt="Document Icon"></img></button>
         </div>
-      </div>
+        <!-- Small side Box -->
+        <div class="aside">
+          <div class="aside-element">Upload Documents
+            <button class="document-button"> <img class="document-icon" src="./images/Documents.png" alt="Document Icon"></img></button>
+          </div>
+        </div>
     </section>
-  </div>
+    </div>
 
 </body>
 
