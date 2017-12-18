@@ -236,7 +236,7 @@ body {
   display: flex;
   flex-direction: colum;
   padding: 20px;
-  width: 70%;
+  width: 90%;
   float: right;
   color: #50596A;
   background-color: #19283B;
@@ -251,4 +251,7 @@ body {
   display: flex;
   flex-direction: column;
   float: left;
+}
+.profile-button img {
+    float: left;
 }

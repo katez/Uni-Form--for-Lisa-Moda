@@ -46,28 +46,27 @@
           <div>
             <p class="bio-header">Bio</p>
             <a href="#" class="text edit" id="bio-edit">edit</a>
-            <p contenteditable="true" bio="bio-summary">In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales.</p>
+            <!--Plz check if data-placeholder is working-->
+            <p contenteditable="true" bio="bio-summary" data-placeholder="In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales."></p>
           </div>
 
           <section>
             <div class="profile-preferences">
               <a href="#" class="text edit">edit</a>
               <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">+</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <span class="dropdown-content">+</span>
-                  <span class="dropdown-content">++</span>
-                  <span class="dropdown-content">+++</span>
-                </div>
+                <select id="myDropdown" class="dropdown-content">
+                  <option class="dropdown-content">+</option>
+                  <option class="dropdown-content">++</option>
+                  <option class="dropdown-content">+++</option>
+                </select>
               </div>
               <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">+</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <span>+</span>
-                  <span>++</span>
-                  <span>+++</span>
+                <select id="myDropdown" class="dropdown-content">
+                  <option>+</option>
+                  <option>++</option>
+                  <option>+++</option>
 
-          </div>
+          </select>
           </div>
           </div>
           </section>
@@ -81,6 +80,7 @@
       <!-- Small side Box -->
       <div class="aside">
         <div class="aside-element">Upload Documents</div>
+        <input type="file">
       </div>
     </section>
   </div>

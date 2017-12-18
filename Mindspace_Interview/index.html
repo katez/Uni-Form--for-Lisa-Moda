@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Saira+Semi+Condensed" rel="stylesheet">
+  <link href="newStyle.css" rel="stylesheet">
+</head>
+<body>
+<div class="emailContainer step">
+  <div class="wrapper">
+    <div class="rightWrapper">
+      <input type="email" placeholder="Your email" class="emailField" required minlength="1">
+    </div>
+    <button class="switchContainer" disabled>Next</button>
+  </div>
+</div>
+<div class="voiceRecordingScreen hidden step">
+  <div class="questionAmount">Question <span class="startOrder"></span>/<span class="endOrder"></span></div>
+  <div class="countDownContainer">Time left <span class="countDown">03:00</span></div>
+  <button class="previousButton hidden">Previous</button>
+  <div class="mainContainer container">
+    <p class="questionHeader">Question</p>
+    <button class="startButton commonButton">Start</button>
+    <button class="finishButton commonButton pulse-button">Finish</button>
+    <button class="repeatButton commonButton">Answer<br>Again</button><br>
+    <button class="submitButton hidden">Submit</button>
+  </div>
+  <button class="nextButton hidden">Next</button>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
