@@ -265,16 +265,6 @@ body {
   align-items: center;
 }
 
-.profile-button {
-  display: flex;
-  flex-direction: colum;
-  padding: 20px;
-  width: 90%;
-  float: right;
-  color: #50596A;
-  background-color: #19283B;
-  border: none;
-}
 
 .profile-header {
   font-family: OpenSans-Bold;

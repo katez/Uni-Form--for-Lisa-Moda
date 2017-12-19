@@ -293,15 +293,6 @@ body {
   box-shadow: -5px 0px 5px 0px #EEEEEE;
 }
 
-.profile-button {
-  display: flex;
-  flex-direction: colum;
-  padding: 20px;
-  width: 70%;
-  color: #50596A;
-  background-color: #19283B;
-  border: none;
-}
 
 .profile-preferences {
   width: 40%;
