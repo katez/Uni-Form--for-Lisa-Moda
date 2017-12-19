@@ -157,9 +157,16 @@ input:focus {
   flex-direction: row;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .edit {
   text-align: right;
-  float: right;
   margin-right: 10px;
   color: #6D78D8;
 }

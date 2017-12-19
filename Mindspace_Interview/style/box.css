@@ -122,6 +122,19 @@ body {
   width: 70%;
 }
 
+.interest-list {
+  display: flex;
+flex-wrap: wrap;
+}
+
+.interest-card-header {
+  display: flex;
+}
+
+.mini-container {
+  display: flex;
+}
+
 .aside {
   background: purple;
   width: 10%;
