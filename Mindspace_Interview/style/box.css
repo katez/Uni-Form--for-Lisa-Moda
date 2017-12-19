@@ -100,18 +100,26 @@ body {
   background-color: #FFFFFF;
   box-shadow: -5px 0px 5px 0px #F0F0F0;
 }
+.card-wrapper {
+  display: flex;
+}
 
 .card
   {
     display: flex;
-    max-width: 195px;
+    flex: 1;
     max-height: 90px;
-      .it-card {
-        float: right;
-        flex-direction: row;
+    border: none;
+border-left: 2px solid black;
+border-radius: 0;
+padding-left: 15px;
 }
+.card-header {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
-
 .content-section {
   display: flex;
   flex-direction: row;
