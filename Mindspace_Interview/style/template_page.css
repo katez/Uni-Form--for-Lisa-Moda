@@ -264,7 +264,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+.intro-circle-logo {
+  width: 90%;
+  height: auto;
+}
 
 .profile-header {
   font-family: OpenSans-Bold;
