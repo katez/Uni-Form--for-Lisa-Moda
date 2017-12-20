@@ -108,17 +108,21 @@ body {
   {
     display: flex;
     flex: 1;
-    max-height: 90px;
     border: none;
 border-left: 1px solid black;
 border-radius: 0;
 padding-left: 15px;
+/*max-height: 90px;*/
 }
 .card-header {
   display: flex;
   background-color: transparent;
   border: none;
   padding: 0;
+}
+/**/
+.card-flex {
+  display: flex;
 }
 .content-section {
   display: flex;

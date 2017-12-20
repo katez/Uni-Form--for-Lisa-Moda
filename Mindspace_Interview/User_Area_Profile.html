@@ -49,7 +49,7 @@
           <span class="university-statistics-title">UNI</span>
           <a href="#" class="text edit" id="stat-edit">edit</a>
           <div>
-            <span contenteditable="true" class="university-statistics-result">1,6</span>
+            <span contenteditable="true" id="edit-university-statistics" class="university-statistics-result">1,6</span>
             <span contenteditable="true" class="university-statistics-result">5. B.A.</span>
             <span contenteditable="true" class="university-statistics-result">JA</span>
             <span contenteditable="true" class="university-statistics-result">BWL</span>
@@ -66,7 +66,7 @@
           <div class="mini-container">
             <div class="interests-card">
               <div class="interest-card-header">
-                <h class="card-title">UNI Schwerpunkt</h>
+                <p class="card-title">UNI Schwerpunkt</p>
                 <a href="#" id="edit-group" class="text edit left-edit">edit</a>
               </div>
               <div class="interest-list">
@@ -102,7 +102,7 @@
 
           <div class="interests-card">
             <div class="interest-card-header">
-              <h class="card-title">Praxis</h>
+              <p class="card-title">Praxis</p>
               <a href="#" id="edit-practice-group" class="text edit right-edit">edit</a>
             </div>
             <div class="interest-list">
@@ -145,6 +145,21 @@
                 <a href="#" class="text edit left-edit">edit</a>
               </header>
               <main class="card-contents">
+                <div class="card-flex">
+                  <p>Language</p>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      +
+                    </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">+</a>
+                    <a class="dropdown-item" href="#">++</a>
+                    <a class="dropdown-item" href="#">+++</a>
+                </div>
+                </div>
+
+            </div>
+            <div class="card-flex">
                 <p>Language</p>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -156,6 +171,8 @@
                     <a class="dropdown-item" href="#">+++</a>
                 </div>
                 </div>
+                </div>
+                <div class="card-flex">
                 <p>Language</p>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -166,16 +183,6 @@
                     <a class="dropdown-item" href="#">++</a>
                     <a class="dropdown-item" href="#">+++</a>
                 </div>
-                </div>
-                <p>Language</p>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    +
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">+</a>
-                    <a class="dropdown-item" href="#">++</a>
-                    <a class="dropdown-item" href="#">+++</a>
                 </div>
                 </div>
             </article>
@@ -187,6 +194,7 @@
                   <a href="#" class="text edit left-edit">edit</a>
                 </header>
                 <main class="card-contents">
+                  <div class="card-flex">
                   <p>EXCEL</p>
                   <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,6 +206,8 @@
                       <a class="dropdown-item" href="#">+++</a>
                   </div>
                   </div>
+                  </div>
+                  <div class="card-flex">
                   <p>POWERPOINT</p>
                   <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -209,6 +219,8 @@
                       <a class="dropdown-item" href="#">+++</a>
                   </div>
                   </div>
+                  </div>
+                  <div class="card-flex">
                   <p>WORD</p>
                   <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -220,17 +232,16 @@
                       <a class="dropdown-item" href="#">+++</a>
                   </div>
                   </div>
+                  </div>
               </article>
               </div>
-
-
 
               </select>
             </div>
       </section>
       <div class="details-card">
-        <h class="detail-title">Ausland</h>
-        <h class="detail-title">Ehrenamt</h>
+        <p class="detail-title">Ausland</p>
+        <p class="detail-title">Ehrenamt</p>
       </div>
       <div class="user-save">
         <form>
@@ -241,7 +252,7 @@
 
       <section class="main-section university-statistics-box">
         <div>
-          <h class="title-available">PROFIL FÜR UNTERNEHMEN ANONYM SICHTBAR</h>
+          <p class="title-available">PROFIL FÜR UNTERNEHMEN ANONYM SICHTBAR</p>
           <form>
             <input class="edit user-ja user-save-button" type="button" value="JA/" onClick="doSaveAs()">
             <input class="edit user-nein user-save-button" type="button" value="NEIN" onClick="doSaveAs()">
@@ -256,7 +267,6 @@
     </div>
   </div>
   </section>
-  </div>
 <script src="newScript.js" type="text/javascript"></script>
 </body>
 

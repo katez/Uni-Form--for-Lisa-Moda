@@ -37,6 +37,26 @@ $('#edit-practice-group').click(function(evt) {
   }
   return false;
 });
+/* to be edited for the top portion of the profile to be edited*/
+$('#edit-university-statistics').click(function(evt) {
+  var editInput = $('.practice-input')
+  var itemList = $('.practice-item')
+
+  console.log(itemList, 'this is a print')
+
+  if (editInput.attr('class').indexOf('show') >= 0) {
+    editInput.addClass('hide');
+    itemList.addClass('show');
+    editInput.removeClass('show');
+    itemList.removeClass('hide');
+  } else {
+    editInput.addClass('show');
+    itemList.addClass('hide');
+    editInput.removeClass('hide');
+    itemList.removeClass('show');
+  }
+  return false;
+});
 
 /*var editButton = document.getElementById('edit-group');
 var editInput = document.getElementsByClassName('interest-input')
