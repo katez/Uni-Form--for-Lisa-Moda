@@ -277,23 +277,6 @@ body {
   width: 70%;
 }
 
-.aside {
-  background: purple;
-  width: 10%;
-  height: 10%;
-  margin: 20px;
-}
-
-.aside-element {
-  background: #FFFFFF;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 20px;
-  text-align: center;
-  box-shadow: -5px 0px 5px 0px #EEEEEE;
-}
-
-
 .profile-preferences {
   width: 40%;
   display: flex;
